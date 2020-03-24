@@ -1,0 +1,104 @@
+@charset "utf-8";
+#slider1_container {
+	position: relative;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	width: 900px;
+	height: 250px;
+	overflow: hidden;
+}
+#slider1_container div.loader {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#slider1_container div.load_block {
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+	position: absolute;
+	display: block;
+	top: 0px;
+	left: 0px;
+	width: 900px;
+	height: 250px;
+}
+#slider1_container div.load_img{
+	position: absolute;
+	display: block;
+	background: url(../images/loading.gif) no-repeat center center;
+	top: 0px;
+	left: 0px;
+	width: 900px;
+	height: 250px;
+}
+#slider1_container div.slides {
+	cursor: move;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 900px;
+	height: 260px;
+	overflow: hidden;
+}
+/* jssor slider bullet navigator skin 21 css */
+/* Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html */
+
+/*
+.jssorb21 div           (normal)
+.jssorb21 div:hover     (normal mouseover)
+.jssorb21 .av           (active)
+.jssorb21 .av:hover     (active mouseover)
+.jssorb21 .dn           (mousedown)
+*/
+#slider1_container div.jssorb21 {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	opacity: 0.4;
+}
+#slider1_container div.jssorb21 div, #slider1_container div.jssorb21 div:hover, #slider1_container div.jssorb21 .av {
+	position: absolute;
+	/* size of bullet elment */
+	width: 19px;
+	height: 19px;
+	text-align: center;
+	line-height: 19px;
+	color: white;
+	font-size: 12px;
+	background: url(../images/b21.png) no-repeat;
+	overflow: hidden;
+	cursor: pointer;
+}
+#slider1_container div.jssorb21 div { background-position: -5px -5px; }
+#slider1_container div.jssorb21 div:hover, #slider1_container div.jssorb21 .av:hover { background-position: -35px -5px; }
+#slider1_container div.jssorb21 .av { background-position: -65px -5px; }
+#slider1_container div.jssorb21 .dn, #slider1_container div.jssorb21 .dn:hover { background-position: -95px -5px; }
+
+/* jssor slider arrow navigator skin 21 css */
+/* Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html */
+/*
+.jssora21l                  (normal)
+.jssora21r                  (normal)
+.jssora21l:hover            (normal mouseover)
+.jssora21r:hover            (normal mouseover)
+.jssora21l.jssora21ldn      (mousedown)
+.jssora21r.jssora21rdn      (mousedown)
+*/
+#slider1_container span.jssora21l, #slider1_container span.jssora21r {
+	display: block;
+	position: absolute;
+	/* size of arrow element */
+	width: 55px;
+	height: 55px;
+	cursor: pointer;
+	background: url(../images/a21.png) center center no-repeat;
+	overflow: hidden;
+}
+#slider1_container span.jssora21l { background-position: -3px -33px; top: 133px; left: 8px;}
+#slider1_container span.jssora21r { background-position: -63px -33px; top: 133px; right: 8px;}
+#slider1_container span.jssora21l:hover { background-position: -123px -33px; }
+#slider1_container span.jssora21r:hover { background-position: -183px -33px; }
+#slider1_container span.jssora21l.jssora21ldn { background-position: -243px -33px; }
+#slider1_container span.jssora21r.jssora21rdn { background-position: -303px -33px; }
